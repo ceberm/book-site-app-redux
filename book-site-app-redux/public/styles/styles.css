@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a.header{
+    color: #d7d8da;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover {
+    background-color: #b04f21;
+    color:#395c35;
+    cursor: pointer;
+}
+    .header-container {
+        padding-top: 21px 0px;
+        color: #d6aa81;
+        background-color: #395c35;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header {
+        width: 100%;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    background-color: #d7d8da;
+    color: #3b7277;
+    width: 100%;
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .photo-grid-item { 
+    width: 200px;
+    height: 400px;
+    order: 1;
+    flex-grow: 1;
+    align-self: flex-start;
+  }
+  .new-book-container{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 1;
+    align-items: center;
+  }
+  .new-book-item{
+      width: 88%;
+      padding-bottom: 13px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .button-form{
+    width: 50%;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    display: flex;
+    position: absolute;
+    font-size: 17px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    border-top: 1px solid #96d1f8;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    border-radius: 13px;
+    padding: 9.5px 19px;
+  }
+    .button:hover {
+        border-top-color: #28597a;
+        background: #28597a;
+        color: #ccc;
+    }
+    .inputs:hover{
+        border: 2px solid #3b7277;
+        color: #d7d8da;
+    }
+    .inputs{
+        width: 75%;
+        height: 34px;
+    }
+    textarea{
+        min-width: 75%;
+        max-width: 75%;
+        height: 89px;
+    }
+    textarea:hover{
+        border: 2px solid #3b7277;
+        color: #d7d8da;
+    }

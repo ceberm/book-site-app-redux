@@ -1,0 +1,30 @@
+{
+  "name": "booksitereact",
+  "version": "1.0.0",
+  "description": "A new Version of the app improved to manage react native with node js and mongo",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev:server": "cd client && yarn build && cd .. && yarn start",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "keywords": [
+    "node",
+    "mongodb",
+    "express",
+    "react"
+  ],
+  "author": "Cesar Bermudez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1",
+    "nodemon": "^2.0.2"
+  }
+}
